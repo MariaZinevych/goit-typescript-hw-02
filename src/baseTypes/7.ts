@@ -4,11 +4,15 @@
 */
 
 enum Day {
-  Frei,
-  Work,
+  Monday = "Monday",
+  Tuesday = "Tuesday",
+  Wednesday = "Wednesday",
+  Thursday = "Thursday",
+  Friday = "Friday",
+  Saturday = "Saturday",
+  Sunday = "Sunday",
 }
 
 function isWeekend(status: Day): boolean {
-  Day.Work;
-  return false;
+  return status === Day.Saturday || status === Day.Sunday;
 }
